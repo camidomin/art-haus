@@ -1,0 +1,1581 @@
+/*inicio responsive shop*/
+
+@media  (max-width:900px) {
+    .project{
+        flex-direction: column;
+    }
+
+    .right-bar{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:1250px){
+
+    .wrapper{
+        max-width: 95%;
+    }
+}
+
+/*inicio estilos responsive 1000px*/
+
+@media (max-width:1000px){
+    /*inicio estilos navbar responsive 1000px*/
+   
+    .navbar{
+        width:100%;
+        margin: 0x;
+        padding: 0px;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        margin: 0 15px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 30px;
+          margin:1.8rem;
+          justify-content:space-between;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+    }
+    
+        .navbar_visible{
+        left: 0;
+    
+        }
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 43%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:45px;
+            text-decoration: none;
+        }
+    /*inicio estilos responsive boton instagram 1000px*/
+        .float{
+	        position:fixed;
+	        width:50px;
+	        height:50px;
+	        bottom:30px;
+	        right:40px;
+            font-size:50px;
+            text-decoration: none;
+            }
+
+        .my-float{
+	        margin-top:20px;
+         }
+        .fa-instagram{
+            color: black;
+            }
+        .fa-instagram:hover{
+            color: greenyellow;
+            }
+
+    /*fin estilos boton instagram*/
+
+    /*inicio responsive estilo texto about 1000px */
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:50px;
+            padding:50px;
+    
+        }
+
+        .videoabout video{
+            height:550px;
+            width: auto;   
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size: 50px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:-5%;
+            padding: 20;
+            
+        } 
+    
+
+
+    /*inicio estilo responsive paintings 1000px*/
+
+    .grid{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .blueline{
+        background: url(../img/blueline.jpeg);
+        background-size:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .plante{
+        background: url(../img/plante.jpeg);
+        background-size:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .redcircle{
+        background: url(../img/redcircle.jpeg);
+        background-size:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .r{
+        background: url(../img/r.jpeg);
+        background-size:600px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+     
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px));
+        grid-auto-rows: minmax(500px,auto);
+        gap: 20px;
+        padding: 10px;
+        grid-auto-flow: dense;
+    }
+
+    /*inicio estilos polaroids responsive 1000px*/
+
+    .polaroids{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0px 0px 0px 200px;
+        position: relative;
+   
+     }
+
+     .polaroid-text{
+        font-family: 'Roboto';
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 50px 200px 200px 0px;
+        text-align: justify;
+    
+      
+    }
+
+
+    /*inicio estilos nft responsive 1000px */
+    .content-all{
+        width: 0px;
+        margin:0px;
+        perspective: 1000px;
+        position: fixed;
+        margin-top: 100px;
+    }
+
+    .content-carrousel{
+        width: 50%;
+        position: absolute;
+        animation: rotar 15s infinite linear;
+        transform-style:preserve-3d;
+    }
+
+    .content-carrousel:hover{
+        animation-play-state: paused;
+        cursor: pointer;
+    }
+
+    .content-carrousel figure{
+        width: 100%;
+        height: 50px;
+        overflow:hidden;
+        position: absolute;
+        border-radius: 5px;
+    }
+
+    .content-carrousel img{
+        width: 100%;
+    }
+
+    .content-carrousel img:hover{
+        transform: scale(1.2);
+        transition: all 300ms;
+    }
+    
+    .arthausnft{
+        font-family: 'Bebas Neue';
+        color: black;
+        background-color: transparent;
+        font-size: 80px;
+        position: fixed;
+        float: left;
+        transform: rotate(270deg);
+        margin-top: 20%;
+        margin-left:-5%;
+        padding: 20;
+
+    }
+    
+    section{
+        position:fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .pattern{
+       position: relative;
+       transform-style: preserve-3d;
+       perspective: 1000px;
+       animation:animateBg 10s ease-in-out infinite ;
+    }
+    @keyframes animateBg{
+        0%,100%{
+            transform: scale(1.6) rotate(-15deg);
+        }
+        50%{
+            transform: scale(1.6) rotate(15deg);
+        }
+    }
+    
+    .pattern .face{
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        background: url(../img/check.jpg);
+        background-size: 100px 100px;
+        animation: animate 1s linear infinite;
+        opacity: 0.1;
+    }
+    
+    @keyframes animate{
+        0%
+    
+    {
+        background-position: 0;
+    
+    }
+        100%{
+            background-position: 100px;
+        }
+    
+    
+    }
+    .pattern .face.face2{
+        height: 100vh;
+        transform-origin:top;
+        transform:rotateX(70deg);
+    
+    }
+    
+    .pattern .face1:before{
+        content: '';
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 125px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+    }
+    
+    .pattern .face2:before{
+        content: '';
+        position: absolute;
+        bottom:top;
+        left:0;
+        width: 100%;
+        height: 125px;
+        background: linear-gradient(100deg, rgba(0, 0, 0, 0.5), transparent);
+    }
+
+    .cardnft{
+        display: grid;
+        min-height: 100vh;
+        line-height: 1.6;
+        font-family: 'Roboto';
+
+    }
+
+    .card1{
+        display: grid;
+        background: url(../nft/duck-03.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card2{
+        display: grid;
+        background: url(../nft/duck-05.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card3{
+        display: grid;
+        background: url(../nft/duck-07.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card4{
+        display: grid;
+        background: url(../nft/duck-08.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card5{
+        display: grid;
+        background: url(../nft/duck-09.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card6{
+        display: grid;
+        background: url(../nft/duck-10.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card7{
+        display: grid;
+        background: url(../nft/duck-02.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card8{
+        display: grid;
+        background: url(../nft/duck-06.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card9{
+        display: grid;
+        background: url(../nft/duck_Mesa\ de\ trabajo\ 1.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0 0;
+        margin: 20px 200px;
+        max-width: 45ch;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    
+    .card-body{
+        --padding:rem;
+        padding: (var(--padding));
+        
+    
+    }
+    .card-title{
+        position: relative;
+        width: max-content;
+        font-size: 16px;
+        margin-left: 15px;
+        color: chartreuse;
+        left: 30pt;
+        text-shadow: 0 0 5px black,
+                    0 0 25px chartreuse,
+                    0 0 50px chartreuse,
+                    0 0 75px chartreuse,
+                    0 0 100px chartreuse;
+    }
+
+
+ /*fin estilo nft*/
+      
+    
+}
+
+
+
+/*inicio estilo responsive 800px index*/
+@media (max-width:800px){
+
+    /*inicio estilo index responsive 800px*/
+   
+    .navbar{
+        width:100%;
+        margin: 0x;
+        padding: 0px;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        margin: 0 15px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 25px;
+          margin:1rem;
+          justify-content:space-between;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+    }
+    
+        .navbar_visible{
+        left: 0;
+    
+        }
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 43%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:45px;
+            text-decoration: none;
+        }
+    /*inicio estilos responsive boton instagram 800px*/
+        .float{
+	        position:fixed;
+	        width:50px;
+	        height:50px;
+	        bottom:30px;
+	        right:40px;
+            font-size:50px;
+            text-decoration: none;
+            }
+
+        .my-float{
+	        margin-top:20px;
+         }
+        .fa-instagram{
+            color: black;
+            }
+        .fa-instagram:hover{
+            color: greenyellow;
+            }
+
+    /*fin estilos boton instagram*/
+
+    /*inicio responsive estilo texto about 800px*/
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:50px;
+            padding:50px;
+    
+        }
+
+        .videoabout video{
+            height:500px;
+            width: auto;   
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size:40px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:-5%;
+            padding: 20;
+            
+        } 
+
+    
+
+        /*inicio estilo responsive 800px paintings*/
+        .grid{
+            box-sizing: border-box;
+            margin:0px;
+        }
+        
+        .grid-container{
+            font-family: 'Bebas Neue';
+            font-size: 1rem;
+            color: chartreuse;
+        }
+        
+        .grid-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        
+        .blueline{
+            background: url(../img/blueline.jpeg);
+            background-size:500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        
+        .plante{
+            background: url(../img/plante.jpeg);
+            background-size:500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        
+        .redcircle{
+            background: url(../img/redcircle.jpeg);
+            background-size:500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .r{
+            background: url(../img/r.jpeg);
+            background-size:500px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .grid-item:hover {
+            filter: opacity(0.9);
+            transform: scale(1.04);
+         
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px));
+            grid-auto-rows: minmax(500px,auto);
+            gap: 10px;
+            padding: 0px;
+            grid-auto-flow: dense;
+        }
+
+
+         /*inicio estilos polaroids responsive 1000px*/
+
+    .polaroids{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0px 0px 0px 120px;
+        position: relative;
+   
+     }
+
+     .polaroid-text{
+        font-family: 'Roboto';
+        font-size: 16px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 0px 50px 0px 0px;
+        text-align: justify;
+    
+      
+    }
+
+            /*inicio estilos nft responsive 1000px */
+    .content-all{
+        width: 0px;
+        margin:0px;
+        position: fixed;
+        margin-top: 10px;
+    }
+
+    .arthausnft{
+        background-color: transparent;
+        font-size: 0px;
+    }
+
+
+    .cardnft{
+        display: flex;
+        align-items: center;
+        margin-left: 0px;
+        font-family: 'Roboto';
+
+    }
+
+    .card1{
+        display: grid;
+        background: url(../nft/duck-03.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card2{
+        display: grid;
+        background: url(../nft/duck-05.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card3{
+        display: grid;
+        background: url(../nft/duck-07.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card4{
+        display: grid;
+        background: url(../nft/duck-08.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card5{
+        display: grid;
+        background: url(../nft/duck-09.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card6{
+        display: grid;
+        background: url(../nft/duck-10.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card7{
+        display: grid;
+        background: url(../nft/duck-02.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card8{
+        display: grid;
+        background: url(../nft/duck-06.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card9{
+        display: grid;
+        background: url(../nft/duck_Mesa\ de\ trabajo\ 1.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    
+    .card-body{
+        --padding:rem;
+        padding: (var(--padding));
+        
+    
+    }
+    .card-title{
+        position: relative;
+        width: max-content;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 50px;
+        color: chartreuse;
+        left: 30pt;
+        text-shadow: 0 0 5px black,
+                    0 0 25px chartreuse,
+                    0 0 50px chartreuse,
+                    0 0 75px chartreuse,
+                    0 0 100px chartreuse;
+    }
+
+
+ /*fin estilo nft*/
+        
+   
+
+        
+
+
+
+      
+    
+}
+
+
+
+
+
+
+
+/*inicio responsive 600px*/
+
+@media (max-width:600px){
+
+    /*inicio navbar responsive*/
+    .navbar{
+        width:100%;
+        margin: 0x;
+        padding: 0px;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        margin: 0px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 20px;
+          margin:0.5rem;
+          justify-content:space-between;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+    }
+    
+        .navbar_visible{
+        left: 0;
+    
+        }
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 43%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:45px;
+            text-decoration: none;
+        }
+
+        /*fin navbar responsive*/
+
+        /*inicio responsive estilo texto about 600px*/
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:50px;
+            padding:50px;
+    
+        }
+
+        .videoabout video{
+            height:300px;
+            width: auto;   
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size:40px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:-5%;
+            padding: 20;
+            
+        } 
+
+    
+
+
+
+        /*inicio contact responsive*/
+        form{
+        width:200px;
+        margin: 50px auto;
+        font-family: 'Bebas Neue';
+        font-size: 15px;
+        border-radius: 2px;
+        padding: 60px 50px;
+        letter-spacing: 2px;
+
+    }
+    form.half{
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    }
+    form.half .item{
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        margin: auto;
+        align-items:stretch;
+    }
+    form .half .item input{
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: 0;
+        padding:0px;
+        height:30px;
+        background: transparent;
+        font-size: 10px;
+    }
+
+    form .label{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        letter-spacing: 3.5px;
+        margin-bottom: 5px;
+    }
+
+    form .full textarea{
+        display: flex;
+        flex-direction: column;
+        height: 20%;
+        background: transparent;
+        border-radius: 4px;
+        border: 1px solid black;
+        outline: 0;
+        padding: 50px;
+        width: 50%;
+        font-size: 12px;
+    }  
+    form .action{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .action input{
+        margin-bottom: 20px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        height: 25px;
+        justify-content:center;
+    }
+
+    /*inicio estilo responsive 600px paintings*/
+    .grid{
+        box-sizing: border-box;
+        margin:0px;
+    }
+    
+    .grid-container{
+        font-family: 'Bebas Neue';
+        font-size: 1rem;
+        color: chartreuse;
+    }
+    
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .blueline{
+        background: url(../img/blueline.jpeg);
+        background-size:500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .plante{
+        background: url(../img/plante.jpeg);
+        background-size:500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .redcircle{
+        background: url(../img/redcircle.jpeg);
+        background-size:500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .r{
+        background: url(../img/r.jpeg);
+        background-size:500px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+     
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px));
+        grid-auto-rows: minmax(500px,auto);
+        gap: 10px;
+        padding: 0px;
+        grid-auto-flow: dense;
+    }
+
+         /*inicio estilos polaroids responsive 600px*/
+
+         .polaroids{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding:0px 0px 0px 100px;
+            position: relative;
+       
+         }
+    
+         .polaroid-text{
+            font-family: 'Roboto';
+            font-size: 14px;
+            margin-top: 60px;
+            margin-bottom: 0px;
+            padding: 0px 0px 0px 0px;
+            text-align: justify;
+        
+          
+        }
+
+    
+
+
+}  
+
+/*inicio estilo responsive 400px*/
+
+@media (max-width:400px) {
+   
+    .navbar{
+        width:100%;
+        margin: 10px 0px 0px 0px;
+        padding: 0px;
+        display: inline-block;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin:0px 0px 0px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 16px;
+          margin:0.01rem;
+          justify-content:space-between;
+          object-fit:fill;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+        }
+    
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 40%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:40px;
+            text-decoration: none;
+        }
+
+        /*inicio responsive estilo texto about 400px*/
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:60px 20px;
+            padding:0px;
+    
+        }
+
+        .videoabout video{
+            height:220px;
+            width: auto;   
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size: 50px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:-5%;
+            padding: 20;
+            
+        } 
+
+
+        /*inicio estilo responsive 400px paintings*/
+        .grid{
+            box-sizing: border-box;
+            margin:0px;
+        }
+        
+        .grid-container{
+            font-family: 'Bebas Neue';
+            font-size: 1rem;
+            color: chartreuse;
+        }
+        
+        .grid-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        
+        .blueline{
+            background: url(../img/blueline.jpeg);
+            background-size:300px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        
+        .plante{
+            background: url(../img/plante.jpeg);
+            background-size:300px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        
+        .redcircle{
+            background: url(../img/redcircle.jpeg);
+            background-size:300px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .r{
+            background: url(../img/r.jpeg);
+            background-size:300px;
+            background-repeat: no-repeat;
+            background-position: center;
+        
+        }
+        .grid-item:hover {
+            filter: opacity(0.9);
+            transform: scale(1.04);
+         
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px));
+            grid-auto-rows: minmax(500px,auto);
+            gap: 10px;
+            padding: 0px;
+            grid-auto-flow: dense;
+        }
+
+         /*inicio estilos polaroids responsive 1000px*/
+
+         
+         .polaroid-text{
+            font-family: 'Roboto';
+            font-size: 12px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 0px 0px 0px 0px;
+            text-align: justify; 
+        }
+    
+
+        .polaroids{
+            display: grid;
+            grid-template-columns: 1fr;
+            padding:0px px 0px 100px;
+            position: relative;
+        
+        }
+
+        .polaroid1 img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 50px;
+            border: 10px solid whitesmoke;
+            border-bottom: 40px solid whitesmoke;
+        
+        }
+
+        .polaroid2 img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 50px;
+            border: 10px solid whitesmoke;
+            border-bottom: 40px solid whitesmoke;
+        
+        }
+
+        .polaroid3 img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 100px;
+            border: 10px solid whitesmoke;
+            border-bottom: 50px solid whitesmoke;
+        
+        }
+
+
+        
+
+                    /*inicio estilos nft responsive 1000px */
+    .content-all{
+        width: 0px;
+        margin:0px;
+        position: fixed;
+        margin-top: 10px;
+    }
+
+    .arthausnft{
+        font-family: 'Bebas Neue';
+        color: black;
+        background-color: transparent;
+        font-size: 0px;
+        position: fixed;
+        float: left;
+        transform: rotate(270deg);
+        margin-top: 20%;
+        margin-left:-5%;
+        padding: 20;
+
+    }
+
+
+    .cardnft{
+        display: grid;
+        margin-left: 80px;
+        line-height: 1.6;
+        font-family: 'Roboto';
+
+    }
+
+    .card1{
+        display: grid;
+        background: url(../nft/duck-03.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card2{
+        display: grid;
+        background: url(../nft/duck-05.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card3{
+        display: grid;
+        background: url(../nft/duck-07.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card4{
+        display: grid;
+        background: url(../nft/duck-08.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card5{
+        display: grid;
+        background: url(../nft/duck-09.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card6{
+        display: grid;
+        background: url(../nft/duck-10.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card7{
+        display: grid;
+        background: url(../nft/duck-02.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card8{
+        display: grid;
+        background: url(../nft/duck-06.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card9{
+        display: grid;
+        background: url(../nft/duck_Mesa\ de\ trabajo\ 1.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 30px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    
+    .card-body{
+        --padding:rem;
+        padding: (var(--padding));
+        
+    
+    }
+    .card-title{
+        position: relative;
+        width: max-content;
+        font-size: 16px;
+        margin-left: 15px;
+        margin-top: 50px;
+        color: chartreuse;
+        left: 30pt;
+        text-shadow: 0 0 5px black,
+                    0 0 25px chartreuse,
+                    0 0 50px chartreuse,
+                    0 0 75px chartreuse,
+                    0 0 100px chartreuse;
+    }
+
+
+ /*fin estilo nft*/
+        
+        
+   
+    
+}
+
+
+        
+    
+    
+
+        
+
+    /*fin estilos responsive*/

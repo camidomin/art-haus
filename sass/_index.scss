@@ -1,0 +1,85 @@
+$color-principal: black;
+$color-secundario:chartreuse;
+$medida-principal:300px;
+
+
+
+/* incio de estilos barra de menu*/
+
+.navbar .navbar_visible{
+  width:100%;
+  margin: 10px;
+  padding: 50px;
+  display: inline-block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  object-fit: cover;
+  font-family: 'Bebas Neue';
+  text-transform:uppercase;
+  font-size: 28px;
+  max-width: max-content;
+  .navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+    object-fit: cover;
+    .navbar ul li a{
+      text-decoration: none;
+      color: black;
+      text-transform:uppercase;
+      font-family: 'Bebas Neue';
+      font-size: 30px;
+      margin: 4rem; 
+      object-fit: cover;
+      letter-spacing: 1px;
+      overflow: hidden;
+      object-fit: cover;
+      width: max-content;
+      .navbar ul li:hover{
+        background: greenyellow;
+        box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+        .navbar ul li:hover::after{
+          width: 100%;  background-color: chartreuse;
+      }
+    }
+    
+      
+  }
+  
+}
+
+}
+
+/* fin estilos barra de menu*/
+
+/* inicio estilos logo art haus*/
+
+.content h1 a{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  transform: translate(-50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-emphasis-color: rgb(255, 255, 255);
+  margin: 50%;
+  margin-top: 50px;
+  font-family: 'Bebas Neue';
+  letter-spacing:5px;
+  color: rgb(0, 0, 0);
+  left: 5pt;
+  position: absolute;
+  font-size: 90pt;
+  text-decoration: none;
+}
+
+.plante{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* fin estilos logo art haus*/
