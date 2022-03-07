@@ -6,71 +6,75 @@ $medida-principal:300px;
 %polaroid {
     border: 10px solid whitesmoke;
     border-bottom: 60px solid whitesmoke;
-};
+}
+
+;
 
 @mixin paints {
-    background-size:800px;
+    background-size: 800px;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 /*inicio estilos paintings*/
 
-.paintings-title{
+.paintings-title {
     text-align: center;
     font-family: 'Bebas Neue';
     font-size: 120px;
     margin: 0;
     color: transparent;
-    line-height: 160px ;
+    line-height: 160px;
     -webkit-text-stroke: 1px black;
     background: url(../img/7.jpeg);
-    -webkit-background-clip:text;
+    -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
 }
 
-@keyframes back{
-    100%{
+@keyframes back {
+    100% {
         background-position: 2000px 0;
 
     }
 }
 
-.grid{
+.grid {
     box-sizing: border-box;
     margin: 0;
-    background:#0c3c14;
-    .grid-item{
+    background: #0c3c14;
+
+    .grid-item {
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 5px;
         transition: transform 0.3s ease-in-out;
-        
+
     }
 }
 
-.blueline{
+.blueline {
     background: url(../img/blueline.jpeg);
-    background-size:800px;
+    background-size: 800px;
     background-repeat: no-repeat;
     background-position: center;
 
 }
 
-.plante{
+.plante {
     background: url(../img/plante.jpeg);
     @include paints;
 
 }
 
-.redcircle{
+.redcircle {
     background: url(../img/redcircle.jpeg);
     @include paints;
 
 }
-.r{
+
+.r {
     background: url(../img/r.jpeg);
     @include paints;
 
@@ -79,72 +83,73 @@ $medida-principal:300px;
 .grid-item:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
- 
+
 }
-.grid-container{
+
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px));
-    grid-auto-rows: minmax(500px,auto);
+    grid-auto-rows: minmax(500px, auto);
     gap: 50px;
     padding: 20px;
     grid-auto-flow: dense;
 }
 
-.grid-text{
+.grid-text {
     font-family: 'Bebas Neue';
     color: chartreuse
 }
 
-.grid-text h4{
+.grid-text h4 {
     margin-left: 0px;
     margin-top: 600px;
     font-size: 30px;
     text-align: center;
 }
 
-.grid-text h5{
+.grid-text h5 {
     margin-left: 0px;
     text-align: center;
 }
 
 /*inicio estilos polaroids*/
 
-.polaroids{
+.polaroids {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding:0px 0px 0px 300px;
+    padding: 0px 0px 0px 300px;
     position: relative;
-   
+
 }
 
-.polaroid1 img{
+.polaroid1 img {
     width: 75%;
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
     @extend %polaroid;
-   
+
 }
 
-.polaroid2 img{
+.polaroid2 img {
     width: 60%;
     height: auto;
     object-fit: cover;
     margin-bottom: 0px;
     @extend %polaroid;
-   
+
 }
 
-.polaroid3 img{
+.polaroid3 img {
     width: 75%;
     height: auto;
     object-fit: cover;
     margin-bottom: 100px;
     @extend %polaroid;
-   
+
 }
 
-.polaroid4 img{
+.polaroid4 img {
     width: 65%;
     height: auto;
     object-fit: cover;
@@ -152,29 +157,30 @@ $medida-principal:300px;
     @extend %polaroid;
 }
 
-.polaroid5 img{
+.polaroid5 img {
     width: 100%;
     height: auto;
     margin-bottom: 0px;
-    margin-right:0px;
+    margin-right: 0px;
     @extend %polaroid;
 }
 
-.polaroid1:hover{
+.polaroid1:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
 }
 
-.polaroid2:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-.polaroid3:hover{
+.polaroid2:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
 }
 
-.polaroid-text{
+.polaroid3:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.polaroid-text {
     font-family: 'Roboto';
     font-size: 20px;
     margin-top: 80px;
@@ -182,8 +188,7 @@ $medida-principal:300px;
     padding: 50px 200px 200px 0px;
     text-align: justify;
 
-  
+
 }
 
 /*fin estilos paintings*/
-

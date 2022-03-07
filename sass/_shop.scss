@@ -5,25 +5,30 @@ $font-principal:'Bebas Neue';
 
 /*inicio estilo shop*/
 
-.container{
+.container {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:$font-principal;
-    background:whitesmoke;
-    .wrapper{
+    font-family: $font-principal;
+    background: whitesmoke;
+
+    .wrapper {
         max-width: 1000px;
         margin: 0 auto;
-        .wrapper h1{
+
+        .wrapper h1 {
             padding: 30px;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 1px;
-            .project{
+
+            .project {
                 display: flex;
-                .shop{
+
+                .shop {
                     flex: 75%;
-                    .box{
+
+                    .box {
                         display: flex;
                         width: 100%;
                         height: 200px;
@@ -31,22 +36,28 @@ $font-principal:'Bebas Neue';
                         background: #fff;
                         transition: all .6s ease;
                         box-shadow: rgb(100, 100, 111, 0.2) 0 7px 29px 0;
-                        .box:hover{
+
+                        .box:hover {
                             transform: scale(1.02);
-                            .box img{
+
+                            .box img {
                                 width: 150px;
                                 height: 200px;
                                 object-fit: cover;
-                                .content{
+
+                                .content {
                                     padding: 20px;
                                     position: relative;
                                     width: 100%;
-                                    .content h3{
+
+                                    .content h3 {
                                         margin-bottom: 20px;
                                         font-size: 24px;
-                                        .content h4{
+
+                                        .content h4 {
                                             margin-bottom: 20px;
-                                            .btn-area{
+
+                                            .btn-area {
                                                 position: absolute;
                                                 bottom: 20px;
                                                 right: 20px;
@@ -55,9 +66,10 @@ $font-principal:'Bebas Neue';
                                                 color: black;
                                                 border-radius: 8px;
                                                 cursor: pointer;
-                                                .btn-area:hover{
-                                                    background-color:$color-principal;
-                                                    color:#fff;
+
+                                                .btn-area:hover {
+                                                    background-color: $color-principal;
+                                                    color: #fff;
                                                 }
                                             }
 
@@ -66,32 +78,35 @@ $font-principal:'Bebas Neue';
                                 }
                             }
                         }
-                    
+
                     }
                 }
-                
+
             }
         }
     }
 }
 
 
-.right-bar{
+.right-bar {
     flex: 25%;
     margin-left: 20px;
-    padding:20px;
+    padding: 20px;
     height: 250px;
     border-radius: 5px;
-    background:#fff;
+    background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-    .right-bar hr{
+
+    .right-bar hr {
         margin-bottom: 25px;
-        .right-bar p{
+
+        .right-bar p {
             display: flex;
             justify-content: space-between;
             margin-bottom: 25px;
             font-size: 20px;
-            .right-bar a{
+
+            .right-bar a {
                 background-color: $color-principal;
                 color: #fff;
                 text-decoration: none;
@@ -101,12 +116,14 @@ $font-principal:'Bebas Neue';
                 line-height: 40px;
                 font-weight: 900;
                 border-radius: 6px;
-                .right-bar i{
+
+                .right-bar i {
                     margin-right: 15px;
-                    .right-bar a:hover{
+
+                    .right-bar a:hover {
                         background-color: $color-secundario;
                     }
-                   
+
                 }
             }
         }

@@ -28,7 +28,7 @@
     color: black;
     text-transform:uppercase;
     font-family: 'Bebas Neue';
-    font-size: 30px;
+    font-size: 29px;
     margin: 4rem; 
     object-fit: cover;
     letter-spacing: 1px;
@@ -159,7 +159,7 @@
 }
 
 .videoabout video{
-    width: 1400px;
+    width: 1800px;
     height: auto;
 }
 /*fin estilo texto about*/
@@ -1020,14 +1020,10 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 /*fin estilo nft*/
 
+/*inicio estilos responsive 2000px*/
 
-
-
-
-/*inicio estilos responsive 1000px*/
-
-@media (max-width:1000px){
-    /*inicio estilos navbar responsive 1000px*/
+@media (max-width:2000px){
+    /*inicio estilos navbar responsive 1800px*/
    
     .navbar{
         width:100%;
@@ -1048,8 +1044,8 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
           color: black;
           text-transform:uppercase;
           font-family: 'Bebas Neue';
-          font-size: 30px;
-          margin:1.8rem;
+          font-size: 34px;
+          margin:4rem;
           justify-content:space-between;
           overflow: hidden;
       }
@@ -1088,7 +1084,385 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
             font-family: 'Bebas Neue';
             color: rgb(0, 0, 0);
             left: 0pt;
-            font-size:45px;
+            font-size:120px;
+            text-decoration: none;
+        }
+
+/*inicio responsive estilo texto about 1400px */
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:50px;
+            padding:50px;
+    
+        }
+
+        .videoabout video{
+            height:1060px;
+            width: auto;  
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size: 90px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:0px;
+            padding: 20;
+            
+        } 
+    
+
+
+/*inicio estilo responsive paintings 1400px*/
+
+    .grid{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .blueline{
+        background: url(../img/blueline.jpeg);
+        background-size:800px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .plante{
+        background: url(../img/plante.jpeg);
+        background-size:800px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .redcircle{
+        background: url(../img/redcircle.jpeg);
+        background-size:800px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .r{
+        background: url(../img/r.jpeg);
+        background-size:800px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+     
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px));
+        grid-auto-rows: minmax(500px,auto);
+        gap: 20px;
+        padding: 10px;
+        grid-auto-flow: dense;
+    }
+
+/*inicio estilos polaroids responsive 1400px*/
+
+    .polaroids{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0px 0px 0px 200px;
+        position: relative;
+   
+     }
+
+     .polaroid-text{
+        font-family: 'Roboto';
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 50px 200px 200px 0px;
+        text-align: justify;
+    
+      
+    }
+
+      
+    
+}
+
+
+
+
+/*inicio estilos responsive 1400px*/
+
+@media (max-width:1400px){
+    /*inicio estilos navbar responsive 1400px*/
+   
+    .navbar{
+        width:100%;
+        margin: 0x;
+        padding: 0px;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        margin: 0 15px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 28px;
+          margin:2.8rem;
+          justify-content:space-between;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+    }
+    
+        .navbar_visible{
+        left: 0;
+    
+        }
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 43%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:100px;
+            text-decoration: none;
+        }
+
+/*inicio responsive estilo texto about 1400px */
+        .text-about{
+            font-family: 'roboto';
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            margin:90px;
+            padding:50px;
+    
+        }
+
+        .videoabout video{
+            height:800px;
+            width: auto;   
+        }
+
+        .content-vertical{
+            font-family: 'Bebas Neue';
+            color: black;
+            background-color: transparent;
+            font-size: 90px;
+            position: fixed;
+            float: left;
+            transform: rotate(270deg);
+            margin-top: 20%;
+            margin-left:-5%;
+            padding: 20;
+            
+        } 
+    
+
+
+/*inicio estilo responsive paintings 1400px*/
+
+    .grid{
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        transition: transform 0.3s ease-in-out;
+        
+    }
+    
+    .blueline{
+        background: url(../img/blueline.jpeg);
+        background-size:700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .plante{
+        background: url(../img/plante.jpeg);
+        background-size:700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    
+    .redcircle{
+        background: url(../img/redcircle.jpeg);
+        background-size:700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .r{
+        background: url(../img/r.jpeg);
+        background-size:700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.04);
+     
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px));
+        grid-auto-rows: minmax(500px,auto);
+        gap: 20px;
+        padding: 10px;
+        grid-auto-flow: dense;
+    }
+
+/*inicio estilos polaroids responsive 1400px*/
+
+    .polaroids{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0px 0px 0px 200px;
+        position: relative;
+   
+     }
+
+     .polaroid-text{
+        font-family: 'Roboto';
+        font-size: 20px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 50px 200px 200px 0px;
+        text-align: justify;
+    
+      
+    }
+
+      
+    
+}
+
+
+
+
+
+
+/*inicio estilos responsive 1000px*/
+
+@media (max-width:1000px){
+    /*inicio estilos navbar responsive 1000px*/
+   
+    .navbar{
+        width:100%;
+        margin: 0x;
+        padding: 0px;
+        object-fit: cover;
+        font-family: 'Bebas Neue';
+        text-transform:uppercase;
+        max-width: max-content;
+      }
+      .navbar ul li{
+        list-style: none;
+        margin: 0 15px 0px;
+        position: relative;
+      }
+      .navbar ul li a{
+          text-decoration: none;
+          color: black;
+          text-transform:uppercase;
+          font-family: 'Bebas Neue';
+          font-size: 24px;
+          margin:1rem;
+          justify-content:space-between;
+          overflow: hidden;
+      }
+      .navbar ul li:hover{
+          background: greenyellow;
+          box-shadow: 0 0 10px greenyellow, 0 0 40px greenyellow, 0 0 80px greenyellow;
+      
+      }
+      .toggle{
+          display: block;
+          color: black;
+    }
+    
+        .navbar_visible{
+        left: 0;
+    
+        }
+    
+        .plante{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: bottom;
+        }
+
+        .content h1 a{
+            width: 100%;
+            position: absolute;
+            top: 43%;
+            transform: translate(10%);
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-emphasis-color: rgb(255, 255, 255);
+            margin:-8%;
+            margin-top: 0px;
+            font-family: 'Bebas Neue';
+            color: rgb(0, 0, 0);
+            left: 0pt;
+            font-size:80px;
             text-decoration: none;
         }
 /*inicio estilos responsive boton instagram 1000px*/
@@ -1545,8 +1919,8 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
           color: black;
           text-transform:uppercase;
           font-family: 'Bebas Neue';
-          font-size: 25px;
-          margin:1rem;
+          font-size: 21px;
+          margin:0.6rem;
           justify-content:space-between;
           overflow: hidden;
       }
@@ -1585,7 +1959,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
             font-family: 'Bebas Neue';
             color: rgb(0, 0, 0);
             left: 0pt;
-            font-size:45px;
+            font-size:80px;
             text-decoration: none;
         }
 /*inicio estilos responsive boton instagram 800px*/
@@ -1730,25 +2104,11 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
 
 /*inicio estilos nft responsive 1000px */
-    .content-all{
-        width: 0px;
-        margin:0px;
-        position: fixed;
-        margin-top: 10px;
-    }
+   
 
     .arthausnft{
         background-color: transparent;
         font-size: 0px;
-    }
-
-
-    .cardnft{
-        display: flex;
-        align-items: center;
-        margin-left: 0px;
-        font-family: 'Roboto';
-
     }
 
     .card1{
@@ -1757,7 +2117,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 10px 30px;
+        margin: 10px 200px;
         font-family: 'Bebas Neue';
         border-radius: 1rem;
         color: rgb(0, 0, 0);
@@ -1771,7 +2131,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 10px 30px;
+        margin: 10px 200px;
         font-family: 'Bebas Neue';
         border-radius: 1rem;
         color: rgb(0, 0, 0);
@@ -1785,7 +2145,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1799,7 +2159,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1812,7 +2172,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1826,7 +2186,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1839,7 +2199,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1852,7 +2212,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -1865,7 +2225,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         opacity: 0.8;
         background-size: cover;
         padding:10rem 0;
-        margin: 20px 30px;
+        margin: 20px 200px;
         font-family: 'Bebas Neue';
         border-radius: 0.8rem;
         color: rgb(0, 0, 0);
@@ -2008,7 +2368,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 
 
 
-/*inicio contact responsive*/
+/*inicio contact responsive 600px*/
         form{
         width:200px;
         margin: 50px auto;
@@ -2163,6 +2523,134 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
           
         }
 
+        /*inicio estilos nft responsive 600px */
+   
+
+    .card1{
+        display: grid;
+        background: url(../nft/duck-03.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card2{
+        display: grid;
+        background: url(../nft/duck-05.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 10px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 1rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card3{
+        display: grid;
+        background: url(../nft/duck-07.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card4{
+        display: grid;
+        background: url(../nft/duck-08.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card5{
+        display: grid;
+        background: url(../nft/duck-09.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+
+    .card6{
+        display: grid;
+        background: url(../nft/duck-10.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card7{
+        display: grid;
+        background: url(../nft/duck-02.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card8{
+        display: grid;
+        background: url(../nft/duck-06.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    .card9{
+        display: grid;
+        background: url(../nft/duck_Mesa\ de\ trabajo\ 1.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        padding:10rem 0;
+        margin: 20px 100px;
+        font-family: 'Bebas Neue';
+        border-radius: 0.8rem;
+        color: rgb(0, 0, 0);
+        border: 5px solid black;
+
+    }
+    
+
+ /*fin estilo nft*/
+
     
 
 
@@ -2290,7 +2778,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         
         .blueline{
             background: url(../img/blueline.jpeg);
-            background-size:300px;
+            background-size:400px;
             background-repeat: no-repeat;
             background-position: center;
         
@@ -2298,7 +2786,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         
         .plante{
             background: url(../img/plante.jpeg);
-            background-size:300px;
+            background-size:400px;
             background-repeat: no-repeat;
             background-position: center;
         
@@ -2306,14 +2794,14 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         
         .redcircle{
             background: url(../img/redcircle.jpeg);
-            background-size:300px;
+            background-size:400px;
             background-repeat: no-repeat;
             background-position: center;
         
         }
         .r{
             background: url(../img/r.jpeg);
-            background-size:300px;
+            background-size:400px;
             background-repeat: no-repeat;
             background-position: center;
         
@@ -2332,7 +2820,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
             grid-auto-flow: dense;
         }
 
-/*inicio estilos polaroids responsive 1000px*/
+/*inicio estilos polaroids responsive 400px*/
 
          
          .polaroid-text{
@@ -2340,7 +2828,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
             font-size: 12px;
             margin-top: 0px;
             margin-bottom: 0px;
-            padding: 0px 0px 0px 0px;
+            padding: 0px;
             text-align: justify; 
         }
     
@@ -2348,7 +2836,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
         .polaroids{
             display: grid;
             grid-template-columns: 1fr;
-            padding:0px px 0px 100px;
+            padding:0px 0px 0px 100px;
             position: relative;
         
         }
@@ -2382,11 +2870,73 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
             border-bottom: 50px solid whitesmoke;
         
         }
+        .arte{
+            width: 100%;
+            padding: 0;
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            margin: 0px;
+        }
+        
+        .arte1 img{
+            width: 65%;
+            height: auto;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            border: 10px solid black;
+            border-bottom: 60px solid black;
+        }
+        .arte2 img{
+            width: 60%;
+            height: auto;
+            margin-top: 150px;
+            margin-bottom: 20px;
+            border: 10px solid black;
+            border-bottom: 60px solid black;
+        }
+        
+        .arte3 img{
+            width: 65%;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            border: 10px solid black;
+            border-bottom: 60px solid black;
+        }
+        
+        .arte4 img{
+            width: 60%;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 20px;
+            border: 10px solid black;
+            border-bottom: 60px solid black;
+        }
+        
+        .art-text{
+            font-family: 'Bebas Neue';
+            color: black;
+        }
+        
+        .art-text h4{
+            margin-right: 200px;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        .art-text h5{
+            margin-right: 200px;
+            font-size: 20px;
+            text-align: center;
+        }
+
 
 
         
 
-/*inicio estilos nft responsive 1000px */
+/*inicio estilos nft responsive 400px */
     .content-all{
         width: 0px;
         margin:0px;
@@ -2561,7 +3111,10 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
     }
 
 
- /*fin estilo nft*/
+    /*fin estilo nft*/
+
+
+    
           
 }
 

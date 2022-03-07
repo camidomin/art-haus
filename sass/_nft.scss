@@ -4,58 +4,75 @@ $medida-principal:300px;
 
 
 
-.content-all{
-    width:$medida-principal - 90px;
+.content-all {
+    width: $medida-principal - 90px;
     margin: $medida-principa + 500px;
     perspective: $medida-principal + 700px;
     position: fixed;
     margin-top: 100px;
-    .content-carrousel{
+
+    .content-carrousel {
         width: 100%;
         position: absolute;
         animation: rotar 15s infinite linear;
-        transform-style:preserve-3d;
-        .content-carrousel:hover{
+        transform-style: preserve-3d;
+
+        .content-carrousel:hover {
             animation-play-state: paused;
             cursor: pointer;
-            .content-carrousel figure{
+
+            .content-carrousel figure {
                 width: 100%;
                 height: 500px;
-                overflow:hidden;
+                overflow: hidden;
                 position: absolute;
-                .content-carrousel figure:nth-child(1){
+
+                .content-carrousel figure:nth-child(1) {
                     transform: rotateY(0deg) translateZ(300px);
-                    .content-carrousel figure:nth-child(2){
+
+                    .content-carrousel figure:nth-child(2) {
                         transform: rotateY(40deg) translateZ(300px);
-                        .content-carrousel figure:nth-child(3){
+
+                        .content-carrousel figure:nth-child(3) {
                             transform: rotateY(80deg) translateZ(300px);
-                            .content-carrousel figure:nth-child(4){
+
+                            .content-carrousel figure:nth-child(4) {
                                 transform: rotateY(120deg) translateZ(300px);
-                                .content-carrousel figure:nth-child(5){
+
+                                .content-carrousel figure:nth-child(5) {
                                     transform: rotateY(160deg) translateZ(300px);
-                                    .content-carrousel figure:nth-child(6){
+
+                                    .content-carrousel figure:nth-child(6) {
                                         transform: rotateY(200deg) translateZ(300px);
-                                        .content-carrousel figure:nth-child(7){
+
+                                        .content-carrousel figure:nth-child(7) {
                                             transform: rotateY(240deg) translateZ(300px);
-                                            .content-carrousel figure:nth-child(8){
+
+                                            .content-carrousel figure:nth-child(8) {
                                                 transform: rotateY(280deg) translateZ(300px);
-                                                .content-carrousel figure:nth-child(9){
+
+                                                .content-carrousel figure:nth-child(9) {
                                                     transform: rotateY(320deg) translateZ(300px);
-                                                    .content-carrousel figure:nth-child(10){
+
+                                                    .content-carrousel figure:nth-child(10) {
                                                         transform: rotateY(360deg) translateZ(300px);
-                                                        .content-carrousel img{
+
+                                                        .content-carrousel img {
                                                             width: 100%;
-                                                            .content-carrousel img:hover{
+
+                                                            .content-carrousel img:hover {
                                                                 transform: scale(1.2);
                                                                 transition: all 300ms;
+
                                                                 @keyframes rotar {
-                                                                    form{
+                                                                    form {
                                                                         transform: rotateY(0deg);
                                                                     }
-                                                                    to{
+
+                                                                    to {
                                                                         transform: rotateY(360deg);
                                                                     }
-                                                                    
+
                                                                 }
                                                             }
                                                         }
@@ -69,14 +86,14 @@ $medida-principal:300px;
                         }
                     }
                 }
-            
+
             }
         }
     }
 }
 
 
-.arthausnft{
+.arthausnft {
     font-family: 'Bebas Neue';
     color: black;
     background-color: transparent;
@@ -85,15 +102,15 @@ $medida-principal:300px;
     float: left;
     transform: rotate(270deg);
     margin-top: 20%;
-    margin-left:-5%;
+    margin-left: -5%;
     padding: 20;
 
 }
 
-   /*inicio estilos nft backgound*/
-   
-   section{
-    position:fixed;
+/*inicio estilos nft backgound*/
+
+section {
+    position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
@@ -101,22 +118,26 @@ $medida-principal:300px;
     overflow: hidden;
 }
 
-.pattern{
-   position: relative;
-   transform-style: preserve-3d;
-   perspective: 1000px;
-   animation:animateBg 10s ease-in-out infinite ;
+.pattern {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    animation: animateBg 10s ease-in-out infinite;
 }
-@keyframes animateBg{
-    0%,100%{
+
+@keyframes animateBg {
+
+    0%,
+    100% {
         transform: scale(1.6) rotate(-15deg);
     }
-    50%{
+
+    50% {
         transform: scale(1.6) rotate(15deg);
     }
 }
 
-.pattern .face{
+.pattern .face {
     position: relative;
     width: 100%;
     height: 50vh;
@@ -126,47 +147,47 @@ $medida-principal:300px;
     opacity: 0.1;
 }
 
-@keyframes animate{
-    0%
+@keyframes animate {
+    0% {
+        background-position: 0;
 
-{
-    background-position: 0;
+    }
 
-}
-    100%{
+    100% {
         background-position: 100px;
     }
 
 
 }
-.pattern .face.face2{
+
+.pattern .face.face2 {
     height: 100vh;
-    transform-origin:top;
-    transform:rotateX(70deg);
+    transform-origin: top;
+    transform: rotateX(70deg);
 
 }
 
-.pattern .face1:before{
+.pattern .face1:before {
     content: '';
     position: absolute;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
     width: 100%;
     height: 125px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
-.pattern .face2:before{
+.pattern .face2:before {
     content: '';
     position: absolute;
-    bottom:top;
-    left:0;
+    bottom: top;
+    left: 0;
     width: 100%;
     height: 125px;
     background: linear-gradient(100deg, rgba(0, 0, 0, 0.5), transparent);
 }
 
-.cardnft{
+.cardnft {
     display: grid;
     min-height: 100vh;
     line-height: 1.6;
@@ -174,12 +195,12 @@ $medida-principal:300px;
 
 }
 
-.card1{
+.card1 {
     display: grid;
     background: url(../nft/duck-03.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -189,12 +210,12 @@ $medida-principal:300px;
 
 }
 
-.card2{
+.card2 {
     display: grid;
     background: url(../nft/duck-05.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -204,12 +225,12 @@ $medida-principal:300px;
 
 }
 
-.card3{
+.card3 {
     display: grid;
     background: url(../nft/duck-07.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -219,12 +240,12 @@ $medida-principal:300px;
 
 }
 
-.card4{
+.card4 {
     display: grid;
     background: url(../nft/duck-08.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -233,12 +254,13 @@ $medida-principal:300px;
     border: 5px solid black;
 
 }
-.card5{
+
+.card5 {
     display: grid;
     background: url(../nft/duck-09.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -248,12 +270,12 @@ $medida-principal:300px;
 
 }
 
-.card6{
+.card6 {
     display: grid;
     background: url(../nft/duck-10.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -262,12 +284,13 @@ $medida-principal:300px;
     border: 5px solid black;
 
 }
-.card7{
+
+.card7 {
     display: grid;
     background: url(../nft/duck-02.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -276,12 +299,13 @@ $medida-principal:300px;
     border: 5px solid black;
 
 }
-.card8{
+
+.card8 {
     display: grid;
     background: url(../nft/duck-06.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -290,12 +314,13 @@ $medida-principal:300px;
     border: 5px solid black;
 
 }
-.card9{
+
+.card9 {
     display: grid;
     background: url(../nft/duck_Mesa\ de\ trabajo\ 1.jpg);
     opacity: 0.8;
     background-size: cover;
-    padding:10rem 0 0;
+    padding: 10rem 0 0;
     margin: 20px 200px;
     max-width: 45ch;
     font-family: 'Bebas Neue';
@@ -305,13 +330,14 @@ $medida-principal:300px;
 
 }
 
-.card-body{
-    --padding:rem;
+.card-body {
+    --padding: rem;
     padding: (var(--padding));
-    
+
 
 }
-.card-title{
+
+.card-title {
     position: relative;
     width: max-content;
     font-size: 22px;
@@ -319,10 +345,10 @@ $medida-principal:300px;
     color: chartreuse;
     left: 45pt;
     text-shadow: 0 0 5px black,
-                0 0 25px chartreuse,
-                0 0 50px chartreuse,
-                0 0 75px chartreuse,
-                0 0 100px chartreuse;
+        0 0 25px chartreuse,
+        0 0 50px chartreuse,
+        0 0 75px chartreuse,
+        0 0 100px chartreuse;
 }
 
 

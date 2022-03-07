@@ -1,31 +1,32 @@
-$boton-1: (
-  color-boton-1: black,
+$boton-1: (color-boton-1: black,
 );
 
-$boton-hover:(
-  color-boton-hover: greenyellow,
+$boton-hover:(color-boton-hover: greenyellow,
 );
 
 
 
 
 /*inicio estilos boton instagram*/
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-  font-size:50px;
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  font-size: 50px;
   text-decoration: none;
 }
-.my-float{
-	margin-top:16px;
+
+.my-float {
+  margin-top: 16px;
 }
-.fa-instagram{
+
+.fa-instagram {
   color: map-get($map: $boton-1, $key: color-boton-1);
 }
-.fa-instagram:hover{
+
+.fa-instagram:hover {
   color: map-get($map: $boton-hover, $key: color-boton-hover);
 }
 
@@ -33,10 +34,11 @@ $boton-hover:(
 
 /*inicio estilo art haus vvertical*/
 
-.nav-wrapper-about{
+.nav-wrapper-about {
   background-color: black;
 }
-.content-vertical{
+
+.content-vertical {
   font-family: 'Bebas Neue';
   color: black;
   background-color: transparent;
@@ -45,13 +47,14 @@ $boton-hover:(
   float: left;
   transform: rotate(270deg);
   margin-top: 15%;
-  margin-left:-5%;
+  margin-left: -5%;
   padding: 20;
-  .content-vertical{
-  opacity: 0.9;
-  text-transform: uppercase;
+
+  .content-vertical {
+    opacity: 0.9;
+    text-transform: uppercase;
   }
-  
-} 
+
+}
 
 /*fin estilo art haus vertical*/
